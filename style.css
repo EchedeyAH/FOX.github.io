@@ -3867,17 +3867,21 @@ span.text {
 
 } */
 
-
+/* Sección de Documentación */
 #documentation {
   padding: 40px 5%;
-  background-color: #f4f4f4; /* Color de fondo para diferenciar la sección */
+  background-color: rgba(2, 0, 1, 0.8); /* Fondo oscuro con opacidad */
   border-top: 2px solid #ccc; /* Separador superior */
+  position: relative;
+  z-index: 2;
+  opacity: 0;
+  animation: slideIn1 3s forwards;
 }
 
 #documentation h2 {
   text-align: center;
   font-size: 36px;
-  color: #333;
+  color: #fff;
   margin-bottom: 20px;
 }
 
@@ -3887,7 +3891,7 @@ span.text {
 
 .documentation-links h3, .documentation-pdf h3 {
   font-size: 24px;
-  color: #555;
+  color: #8baafd;
   margin-bottom: 10px;
 }
 
@@ -3902,11 +3906,47 @@ span.text {
 
 .documentation-links a, .documentation-pdf a {
   text-decoration: none;
-  color: #007bff;
+  color: #fff;
   font-size: 18px;
   transition: color 0.3s;
 }
 
 .documentation-links a:hover, .documentation-pdf a:hover {
-  color: #0056b3;
+  color: #8baafd;
+}
+
+/* Animación de la sección */
+@keyframes slideIn1 {
+  0% {
+      opacity: 0;
+      transform: translateX(-100%);
+  }
+
+  100% {
+      opacity: 1;
+      transform: translateX(0);
+  }
+}
+
+/* Diseño de los enlaces */
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 22px;
+  position: relative;
+}
+
+nav ul li a::after {
+  content: '';
+  width: 0;
+  height: 3px;
+  background: #dbc7cd;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  transition: 0.5s;
+}
+
+nav ul li a:hover::after {
+  width: 100%;
 }
