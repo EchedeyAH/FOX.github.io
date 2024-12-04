@@ -256,6 +256,43 @@ nav ul li a:hover::after {
 
 /* home screen */
 
+/* particulas hidrogeno*/
+.particles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.particles .particle {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: rgba(135, 206, 250, 0.7); /* Soft blue hydrogen color */
+  border-radius: 50%; /* Circular hydrogen atoms */
+  box-shadow: 0 0 5px rgba(135, 206, 250, 0.7);
+  animation: float 8s ease-in-out infinite;
+}
+
+/* Float Animation */
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-50px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/*----------------particulas hidrogeno ----*/
+
 /* ...........about me............ */
 #about {
   padding-top: 80px;

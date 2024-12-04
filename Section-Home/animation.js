@@ -33,5 +33,25 @@ const observer = new IntersectionObserver((entries) => {
   });
 }, options);
 
+const particlesContainer = document.querySelector('.particles');
+const numParticles = 50; // Adjust number of hydrogen atoms
+
+for (let i = 0; i < numParticles; i++) {
+  const particle = document.createElement('div');
+  particle.classList.add('particle');
+  
+  // Random position
+  particle.style.left = `${Math.random() * 100}vw`;
+  particle.style.top = `${Math.random() * 100}vh`;
+  
+  // Random size
+  const size = Math.random() * 6 + 4; // Between 4px and 10px
+  particle.style.width = `${size}px`;
+  particle.style.height = `${size}px`;
+  
+  // Append to container
+  particlesContainer.appendChild(particle);
+}
+
 // Start observing each target element
 boxes.forEach((box) => observer.observe(box));
