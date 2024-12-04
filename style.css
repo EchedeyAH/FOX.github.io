@@ -3868,4 +3868,45 @@ span.text {
 } */
 
 
+#documentation {
+  padding: 40px 5%;
+  background-color: #f4f4f4; /* Color de fondo para diferenciar la sección */
+  border-top: 2px solid #ccc; /* Separador superior */
+}
 
+#documentation h2 {
+  text-align: center;
+  font-size: 36px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.documentation-links, .documentation-pdf {
+  margin-top: 30px;
+}
+
+.documentation-links h3, .documentation-pdf h3 {
+  font-size: 24px;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.documentation-links ul, .documentation-pdf ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.documentation-links li, .documentation-pdf li {
+  margin: 10px 0;
+}
+
+.documentation-links a, .documentation-pdf a {
+  text-decoration: none;
+  color: #007bff;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+.documentation-links a:hover, .documentation-pdf a:hover {
+  color: #0056b3;
+}
