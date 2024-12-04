@@ -163,7 +163,7 @@ nav ul li a:hover::after {
 .header-text {
   position: center;
   text-align: center;
-  padding-top: 7%;
+  padding-top: 15%;
   font-size: 23px;
 
 }
