@@ -256,8 +256,8 @@ nav ul li a:hover::after {
 
 
 /* ------------------- Particulas hidrogeno-----------------------*/
-
-.hydrogen-molecule {
+ /* Estilos para las partículas de hidrógeno */
+ .hydrogen-molecule {
   position: relative;
   width: 150px;
   height: 150px;
