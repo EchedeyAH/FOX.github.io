@@ -271,8 +271,8 @@ nav ul li a:hover::after {
 
 .particles .particle {
   position: absolute;
-  width: 40px; /* Aumento el tamaño de las partículas */
-  height: 40px;
+  width: 20px; /* Aumento el tamaño de las partículas */
+  height: 20px;
   background: rgba(173, 216, 230, 0.8); /* Color azul claro, similar al hidrógeno */
   border-radius: 50%; /* Forma circular */
   box-shadow: 0 0 10px rgba(173, 216, 230, 0.6); /* Efecto de resplandor suave */
