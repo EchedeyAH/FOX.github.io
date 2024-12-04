@@ -3834,17 +3834,6 @@ span.text {
 
 } */
 
-/* Responsividad */
-@media (max-width: 768px) {
-  .header-text h3 {
-    font-size: 2.5rem; /* Ajusta tamaño del texto en pantallas medianas */
-  }
-}
 
-@media (max-width: 480px) {
-  .header-text h3 {
-    font-size: 1.8rem; /* Ajusta tamaño del texto en pantallas pequeñas */
-  }
-}
 
 
