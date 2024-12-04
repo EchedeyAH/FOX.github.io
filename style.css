@@ -257,6 +257,7 @@ nav ul li a:hover::after {
 /* home screen */
 
 /* particulas hidrogeno*/
+/* Fondo con Partículas Flotantes */
 .particles {
   position: absolute;
   top: 0;
@@ -265,31 +266,35 @@ nav ul li a:hover::after {
   height: 100%;
   overflow: hidden;
   z-index: 1;
-  pointer-events: none;
+  pointer-events: none; /* Para que no interfiera con otros elementos */
 }
 
 .particles .particle {
   position: absolute;
-  width: 10px;
-  height: 10px;
-  background: rgba(135, 206, 250, 0.7); /* Soft blue hydrogen color */
-  border-radius: 50%; /* Circular hydrogen atoms */
-  box-shadow: 0 0 5px rgba(135, 206, 250, 0.7);
-  animation: float 8s ease-in-out infinite;
+  width: 40px; /* Aumento el tamaño de las partículas */
+  height: 40px;
+  background: rgba(173, 216, 230, 0.8); /* Color azul claro, similar al hidrógeno */
+  border-radius: 50%; /* Forma circular */
+  box-shadow: 0 0 10px rgba(173, 216, 230, 0.6); /* Efecto de resplandor suave */
+  animation: float 10s ease-in-out infinite; /* Animación más suave */
 }
 
-/* Float Animation */
+/* Animación de las Partículas (Bolitas) Flotando */
 @keyframes float {
   0% {
-    transform: translateY(0);
+    transform: translateY(0) scale(1);
+    opacity: 0.8;
   }
   50% {
-    transform: translateY(-50px);
+    transform: translateY(-50px) scale(1.2); /* Aumento de tamaño para darle dinamismo */
+    opacity: 1;
   }
   100% {
-    transform: translateY(0);
+    transform: translateY(0) scale(1);
+    opacity: 0.8;
   }
 }
+
 
 /*----------------particulas hidrogeno ----*/
 
