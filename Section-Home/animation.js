@@ -38,21 +38,21 @@ boxes.forEach((box) => observer.observe(box));
 
 
 const particlesContainer = document.querySelector('.particles');
-const numParticles = 30; // Ajusté el número de partículas para que no sea demasiado denso
+const numParticles = 50; // Adjust number of hydrogen atoms
 
 for (let i = 0; i < numParticles; i++) {
   const particle = document.createElement('div');
   particle.classList.add('particle');
   
-  // Posiciones aleatorias
+  // Random position
   particle.style.left = `${Math.random() * 100}vw`;
   particle.style.top = `${Math.random() * 100}vh`;
   
-  // Tamaños aleatorios dentro de un rango
-  const size = Math.random() * 20 + 30; // Entre 30px y 50px
+  // Random size
+  const size = Math.random() * 6 + 4; // Between 4px and 10px
   particle.style.width = `${size}px`;
   particle.style.height = `${size}px`;
   
-  // Añadir la partícula al contenedor
+  // Append to container
   particlesContainer.appendChild(particle);
 }
