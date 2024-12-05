@@ -87,6 +87,68 @@
 
     </div>
 
+<!-- about section -->
+<div id="about">
+    <div class="containers box">
+        <div class="row">
+            <div class="col-1">
+                <h1 class="sub-title">Documentation</h1>
+
+                
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <!--<p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                    <p class="tab-links" onclick="opentab('others')">Others</p>-->
+                </div>
+
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span> About projects: <br></span>
+                            <div class="space1">
+                                <img
+                                    src="https://img.shields.io/badge/c-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white">
+                                <img
+                                    src="https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white">
+                                <img
+                                    src="https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white">
+                            </div>
+                        </li>
+                        
+                    </ul>
+                </div>
+
+
+            
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+</div>
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname) {
+        for (tablink of tablinks) {
+            tablink.classList.remove("active-link");
+        }
+
+        for (tabcontent of tabcontents) {
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+
+    }
+</script>
+<!-- about section -->
 
     <!-- Projects section -->
     <div id="projects">
